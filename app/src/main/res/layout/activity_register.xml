@@ -14,7 +14,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imageTop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/rectangle_1"
@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageCenter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/rectangle_2"
@@ -31,7 +31,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageBottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/rectangle_3"
@@ -39,7 +39,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/const_login"
+            android:id="@+id/const_register"
             android:layout_width="match_parent"
             android:layout_height="484dp"
             android:layout_marginStart="21dp"
@@ -48,10 +48,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView1">
+            app:layout_constraintTop_toBottomOf="@+id/imageTop">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_register"
                 android:layout_width="144dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
@@ -61,7 +61,7 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/txt_register"
                 android:layout_width="142dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="12dp"
@@ -73,11 +73,11 @@
                 android:textFontWeight="700"
                 android:textSize="24sp"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toBottomOf="@+id/button"
-                app:layout_constraintStart_toStartOf="@+id/button" />
+                app:layout_constraintBottom_toBottomOf="@+id/btn_register"
+                app:layout_constraintStart_toStartOf="@+id/btn_register" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/txt_title_register"
                 android:layout_width="338dp"
                 android:layout_height="67dp"
                 android:layout_marginStart="4dp"
@@ -92,7 +92,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/txt_alReady"
                 android:layout_width="186sp"
                 android:layout_height="34sp"
                 android:fontFamily="@font/nunito_extralight"
@@ -105,14 +105,14 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/editTxt_password"
+                android:id="@+id/edt_password"
                 android:layout_width="309dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/ig_txt"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                app:layout_constraintTop_toBottomOf="@+id/edt_email" />
 
             <TextView
                 android:id="@+id/txt_password"
@@ -126,19 +126,19 @@
                 android:text="Password"
                 android:textColor="#2F80ED"
                 android:textSize="14sp"
-                app:layout_constraintBottom_toTopOf="@+id/editTxt_password"
+                app:layout_constraintBottom_toTopOf="@+id/edt_password"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                app:layout_constraintTop_toBottomOf="@+id/edt_email" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/edt_fullName"
                 android:layout_width="309dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="32dp"
                 android:background="@drawable/ig_txt"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/txt_title_register" />
 
             <TextView
                 android:layout_width="338dp"
@@ -151,19 +151,19 @@
                 android:text="Full Name"
                 android:textColor="#2F80ED"
                 android:textSize="14sp"
-                app:layout_constraintBottom_toTopOf="@+id/editText"
+                app:layout_constraintBottom_toTopOf="@+id/edt_fullName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/txt_title_register" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/edt_email"
                 android:layout_width="309dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/ig_txt"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintTop_toBottomOf="@+id/edt_fullName" />
 
             <TextView
                 android:layout_width="338dp"
@@ -176,9 +176,9 @@
                 android:text="Email"
                 android:textColor="#2F80ED"
                 android:textSize="14sp"
-                app:layout_constraintBottom_toTopOf="@+id/editText2"
+                app:layout_constraintBottom_toTopOf="@+id/edt_email"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintTop_toBottomOf="@+id/edt_fullName" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/const_auth"
@@ -186,10 +186,10 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="25dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTxt_password">
+                app:layout_constraintTop_toBottomOf="@+id/edt_password">
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/img_fb"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/fb_logo"
@@ -197,16 +197,17 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <ImageView
+                    android:id="@+id/img_google"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/google_logo"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView5"
-                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintEnd_toStartOf="@+id/img_apple"
+                    app:layout_constraintStart_toEndOf="@+id/img_fb"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/img_apple"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/apple_logo"
