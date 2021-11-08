@@ -70,7 +70,7 @@
                 android:lineHeight="33sp"
                 android:text="Register"
                 android:textColor="#FFFF"
-                android:textFontWeight="700"
+                android:textFontWeight="400"
                 android:textSize="24sp"
                 android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="@+id/btn_register"
@@ -81,7 +81,7 @@
                 android:layout_width="338dp"
                 android:layout_height="67dp"
                 android:layout_marginStart="4dp"
-                android:fontFamily="@font/nunito_extrabold"
+                android:fontFamily="@font/nunito"
                 android:lineHeight="49sp"
                 android:text="Register"
                 android:textColor="#2F80ED"
@@ -93,16 +93,30 @@
 
             <TextView
                 android:id="@+id/txt_alReady"
-                android:layout_width="186sp"
+                android:layout_width="wrap_content"
                 android:layout_height="34sp"
-                android:fontFamily="@font/nunito_extralight"
+                android:fontFamily="@font/nunito"
                 android:lineHeight="22sp"
-                android:text="Already Member? Login"
-                android:textColor="#FFF"
-                android:textFontWeight="700"
+                android:text="Already Member?"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="400"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="34sp"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/nunito"
+                android:lineHeight="22sp"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="700"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_alReady" />
 
             <EditText
                 android:id="@+id/edt_password"

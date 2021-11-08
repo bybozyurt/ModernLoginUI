@@ -11,7 +11,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imageTop"
@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="420dp"
             android:layout_marginStart="21dp"
-            android:layout_marginTop="116dp"
+            android:layout_marginTop="105dp"
             android:layout_marginEnd="21dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +69,7 @@
                 android:lineHeight="33sp"
                 android:text="Login"
                 android:textColor="#FFFF"
-                android:textFontWeight="700"
+                android:textFontWeight="400"
                 android:textSize="24sp"
                 android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="@+id/btn_login"
@@ -80,7 +80,7 @@
                 android:layout_width="338dp"
                 android:layout_height="67dp"
                 android:layout_marginStart="4dp"
-                android:fontFamily="@font/nunito_extrabold"
+                android:fontFamily="@font/nunito"
                 android:lineHeight="49sp"
                 android:text="Login"
                 android:textColor="#2F80ED"
@@ -92,16 +92,30 @@
 
             <TextView
                 android:id="@+id/txt_NewHere"
-                android:layout_width="161sp"
+                android:layout_width="wrap_content"
                 android:layout_height="34sp"
-                android:fontFamily="@font/nunito_extralight"
+                android:fontFamily="@font/nunito"
                 android:lineHeight="22sp"
-                android:text="New Here? Register"
+                android:text="New Here?"
+                android:textColor="#FFF"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_register"
+                android:layout_width="wrap_content"
+                android:layout_height="34sp"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/nunito"
+                android:lineHeight="22sp"
+                android:text="Register"
                 android:textColor="#FFF"
                 android:textFontWeight="700"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/txt_NewHere" />
 
             <EditText
                 android:id="@+id/edt_email"

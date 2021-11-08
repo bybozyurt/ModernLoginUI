@@ -10,17 +10,13 @@ import com.example.modernlogin.ui.home.HomeActivity
 
 class LoginActivity : AppCompatActivity() {
 
-    private var textView2 : TextView? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        textView2 = findViewById(R.id.textView2)
 
-        textView2?.setOnClickListener {
-            Toast.makeText(this, "hee", Toast.LENGTH_SHORT).show()
-        }
 
 
 
