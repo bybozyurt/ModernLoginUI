@@ -1,35 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeActivity">
+    android:fillViewport="true"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
     <ImageView
-        android:id="@+id/imageTop"
+        android:id="@+id/home_background"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:src="@drawable/rectangle_1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageCenter"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:src="@drawable/rectangle_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <ImageView
-        android:id="@+id/imageBottom"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:src="@drawable/rectangle_3"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="192dp"
@@ -37,7 +31,7 @@
         android:translationX="50dp"
         android:translationY="412dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageTop">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/img_vector"
@@ -81,11 +75,11 @@
         android:id="@+id/btn_started"
         android:layout_width="144dp"
         android:layout_height="60dp"
-        android:layout_marginTop="77dp"
-        android:layout_marginEnd="27dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/ig_btn"
-        app:layout_constraintEnd_toEndOf="@+id/imageBottom"
-        app:layout_constraintTop_toTopOf="@+id/imageBottom" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:layout_width="142dp"
@@ -105,3 +99,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

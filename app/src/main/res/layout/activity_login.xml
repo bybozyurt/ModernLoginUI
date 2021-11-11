@@ -12,42 +12,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imageTop"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageCenter"
+            android:id="@+id/login_background"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <ImageView
-            android:id="@+id/imageBottom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_3"
+            android:layout_height="match_parent"
+            android:src="@drawable/login_background"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/const_login"
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="420dp"
-            android:layout_marginStart="21dp"
-            android:layout_marginTop="105dp"
-            android:layout_marginEnd="21dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageBottom"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/login_background"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageTop">
+            app:layout_constraintStart_toStartOf="parent">
 
             <Button
                 android:id="@+id/btn_login"
