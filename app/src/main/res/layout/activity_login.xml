@@ -5,188 +5,152 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
     tools:context=".ui.login.LoginActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/const_login"
-        android:layout_width="360dp"
-        android:layout_height="420dp"
-        android:layout_marginBottom="10dp"
+    <ImageView
+        android:id="@+id/r1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_rect1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/r2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_rect2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/r3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/r3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="144dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/ig_btn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+    <include
+        android:id="@+id/include_login"
+        layout="@layout/include_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="77dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
-            <TextView
-                android:id="@+id/txt_login"
-                android:layout_width="142dp"
-                android:layout_height="40dp"
-                android:layout_marginBottom="12dp"
-                android:fontFamily="@font/nunito"
-                android:gravity="center"
-                android:lineHeight="33sp"
-                android:text="Login"
-                android:textColor="#FFFF"
-                android:textFontWeight="400"
-                android:textSize="24sp"
-                android:textStyle="normal"
-                app:layout_constraintBottom_toBottomOf="@+id/btn_login"
-                app:layout_constraintStart_toStartOf="@+id/btn_login" />
+    <include
+        android:id="@+id/include_sosyal"
+        layout="@layout/include_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/include_login"
+        app:layout_constraintTop_toBottomOf="@+id/include_login" />
 
-            <TextView
-                android:id="@+id/txt_title_login"
-                android:layout_width="338dp"
-                android:layout_height="67dp"
-                android:layout_marginStart="4dp"
-                android:fontFamily="@font/nunito"
-                android:lineHeight="49sp"
-                android:text="Login"
-                android:textColor="#2F80ED"
-                android:textFontWeight="700"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/txt_NewHere"
-                android:layout_width="wrap_content"
-                android:layout_height="34sp"
-                android:fontFamily="@font/nunito"
-                android:lineHeight="22sp"
-                android:text="New Here?"
-                android:textColor="#FFF"
-                android:textFontWeight="400"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/txt_register"
-                android:layout_width="wrap_content"
-                android:layout_height="34sp"
-                android:layout_marginStart="2dp"
-                android:fontFamily="@font/nunito"
-                android:lineHeight="22sp"
-                android:text="Register"
-                android:textColor="#FFF"
-                android:textFontWeight="700"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/txt_NewHere" />
-
-            <EditText
-                android:id="@+id/edt_email"
-                android:layout_width="309dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="32dp"
-                android:background="@drawable/ig_txt"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_title_login" />
-
-            <TextView
-                android:layout_width="338dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="2dp"
-                android:fontFamily="@font/nunito"
-                android:lineHeight="19sp"
-                android:text="Email"
-                android:textColor="#2F80ED"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toTopOf="@+id/edt_email"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_title_login" />
-
-            <EditText
-                android:id="@+id/edt_password"
-                android:layout_width="309dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="40dp"
-                android:background="@drawable/ig_txt"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edt_email" />
-
-            <TextView
-                android:layout_width="338dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="19dp"
-                android:layout_marginBottom="2dp"
-                android:fontFamily="@font/nunito"
-                android:lineHeight="19sp"
-                android:text="Password"
-                android:textColor="#2F80ED"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toTopOf="@+id/edt_password"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edt_email" />
-
-            <TextView
-                android:id="@+id/txt_forgot"
-                android:layout_width="161dp"
-                android:layout_height="34dp"
-                android:layout_marginStart="196dp"
-                android:layout_marginTop="13dp"
-                android:fontFamily="@font/nunito"
-                android:text="Forgot Password?"
-                android:textColor="#2F80ED"
-                android:textFontWeight="700"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edt_password" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/const_auth"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_marginTop="25dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edt_password">
-
-                <ImageView
-                    android:id="@+id/img_fb"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/fb_logo"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:id="@+id/img_google"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/google_logo"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/img_apple"
-                    app:layout_constraintStart_toEndOf="@+id/img_fb"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/img_apple"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/apple_logo"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/txt_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/nunito"
+        android:text="Forgot Password?"
+        android:textColor="#2F80ED"
+        android:textFontWeight="700"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/include_login"
+        app:layout_constraintTop_toBottomOf="@+id/include_login" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txt_NewHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/nunito"
+        android:lineHeight="22sp"
+        android:text="New Here?"
+        android:textColor="#FFF"
+        android:textFontWeight="400"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/include_login" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="center"
+        android:lineHeight="22sp"
+        android:text="Register"
+        android:textColor="#FFF"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_NewHere"
+        app:layout_constraintStart_toEndOf="@+id/txt_NewHere" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="144dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/ig_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:gravity="center"
+        android:lineHeight="33sp"
+        android:text="Login"
+        android:textColor="#FFFF"
+        android:textFontWeight="400"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toTopOf="@+id/btn_login" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="247dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="21dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="26dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
