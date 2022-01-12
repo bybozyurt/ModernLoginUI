@@ -10,7 +10,7 @@
         android:layout_width="60dp"
         android:layout_height="70dp"
         android:layout_marginStart="9dp"
-        android:src="@drawable/vector"
+        android:src="@drawable/ic_vector"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
