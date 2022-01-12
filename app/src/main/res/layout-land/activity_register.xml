@@ -7,14 +7,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:viewBindingIgnore="true"
     tools:context=".ui.register.RegisterActivity">
 
     <ImageView
         android:scaleType="fitXY"
         android:id="@+id/r1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:src="@drawable/ic_rect1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +23,7 @@
         android:id="@+id/r2"
         android:scaleType="fitXY"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="170dp"
         android:src="@drawable/ic_rect2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +33,7 @@
         android:id="@+id/r3"
         android:scaleType="fitXY"
         android:layout_width="0dp"
-        android:layout_height="115dp"
+        android:layout_height="80dp"
         android:src="@drawable/ic_rect3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,13 +42,12 @@
 
     <include
         android:id="@+id/include_register"
-        layout="@layout/include_register"
-        android:layout_width="wrap_content"
+        layout="@layout/include_register_land"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="77dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/guideline10"
         app:layout_constraintVertical_bias="0.0" />
@@ -87,7 +85,7 @@
         android:id="@+id/btn_register"
         android:layout_width="134dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/ig_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline6" />
@@ -116,7 +114,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="2dp"
         app:layout_constraintStart_toStartOf="@+id/include_register"
         app:layout_constraintTop_toBottomOf="@+id/include_register" />
 
@@ -139,7 +136,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="229dp" />
+        app:layout_constraintGuide_begin="103dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline11"

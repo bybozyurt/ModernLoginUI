@@ -10,10 +10,14 @@
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/drawable/ic_rect_4.xml" value="0.40625" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/drawable/ic_rectangle_3.xml" value="0.22685185185185186" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout-hdpi/activity_home.xml" value="0.26328125" />
+        <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout-land/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout-land/activity_login.xml" value="0.5" />
+        <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout-land/activity_register.xml" value="0.415625" />
+        <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout-sw600dp/activity_login.xml" value="0.24453125" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout-xhdpi/activity_home.xml" value="0.39765625" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/activity_home.xml" value="0.5" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/activity_login.xml" value="0.5" />
-        <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/activity_register.xml" value="0.67" />
+        <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/activity_register.xml" value="0.5" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/include_apple.xml" value="0.5265625" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/include_auth.xml" value="0.5265625" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/include_facebook.xml" value="0.75" />
@@ -23,6 +27,7 @@
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/include_login.xml" value="0.4875" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/include_login_land.xml" value="0.5265625" />
         <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/include_register.xml" value="0.4875" />
+        <entry key="..\:/Users/Ahmet/Desktop/dosyalar/ModernLoginUI/app/src/main/res/layout/include_register_land.xml" value="0.4890625" />
       </map>
     </option>
   </component>
